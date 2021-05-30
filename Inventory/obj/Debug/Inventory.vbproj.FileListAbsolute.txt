@@ -1,0 +1,17 @@
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Debug\Inventory.exe.config
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Debug\Inventory.exe
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Debug\Inventory.pdb
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Debug\Inventory.xml
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Debug\Inventory.vbprojAssemblyReference.cache
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Debug\Inventory.Form1.resources
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Debug\Inventory.Resources.resources
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Debug\Inventory.vbproj.GenerateResource.cache
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Debug\Inventory.vbproj.CoreCompileInputs.cache
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Debug\Inventory.exe
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Debug\Inventory.xml
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Debug\Inventory.pdb
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Debug\inventory.accdb
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Debug\Inventory.Form2.resources
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Debug\aa\Inventory.resources.dll
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Debug\Inventory.Form1.aa.resources
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Debug\aa\Inventory.resources.dll
