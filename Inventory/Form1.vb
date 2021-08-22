@@ -389,7 +389,7 @@ Public Class Form1
         today = System.DateTime.Now
         'answer = today.AddDays(30)
         'answer = today.AddMinutes(2)
-        answer = #09/18/2021 00:00:00#
+        answer = #09/25/2021 00:00:00#
         'MsgBox("Today: " + today + "\nAnswer: " + answer)
         Dim result As Integer = DateTime.Compare(today, answer)
         'MsgBox(answer.ToString("MM\/dd\/yyyy"))
