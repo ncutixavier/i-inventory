@@ -23,6 +23,12 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
@@ -51,6 +57,7 @@ Partial Class Form1
         Me.Label11 = New System.Windows.Forms.Label()
         Me.pn_users = New System.Windows.Forms.Panel()
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.product_change = New System.Windows.Forms.TextBox()
         Me.txt_id = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.txt_purchase = New System.Windows.Forms.TextBox()
@@ -62,6 +69,7 @@ Partial Class Form1
         Me.btn_delete = New System.Windows.Forms.Button()
         Me.btn_update = New System.Windows.Forms.Button()
         Me.btn_add = New System.Windows.Forms.Button()
+        Me.product_search_txt = New System.Windows.Forms.TextBox()
         Me.pn_help = New System.Windows.Forms.Panel()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
@@ -81,13 +89,15 @@ Partial Class Form1
         Me.btn_filter = New System.Windows.Forms.Button()
         Me.Label22 = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.stock_search_txt = New System.Windows.Forms.TextBox()
         Me.DataGridView3 = New System.Windows.Forms.DataGridView()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.radio_btn_sale = New System.Windows.Forms.RadioButton()
+        Me.DataGridView2 = New System.Windows.Forms.DataGridView()
         Me.radio_btn_purchase = New System.Windows.Forms.RadioButton()
         Me.radio_btn_all = New System.Windows.Forms.RadioButton()
         Me.Panel9 = New System.Windows.Forms.Panel()
+        Me.all_product = New System.Windows.Forms.TextBox()
         Me.tb_id = New System.Windows.Forms.TextBox()
         Me.update_trans_btn = New System.Windows.Forms.Button()
         Me.add_trans_btn = New System.Windows.Forms.Button()
@@ -97,13 +107,16 @@ Partial Class Form1
         Me.cb_transaction = New System.Windows.Forms.ComboBox()
         Me.Label20 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.cb_product = New System.Windows.Forms.ComboBox()
         Me.Label19 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.cb_product = New System.Windows.Forms.ComboBox()
         Me.Panel5 = New System.Windows.Forms.Panel()
         Me.tb_sale = New System.Windows.Forms.TextBox()
         Me.Label17 = New System.Windows.Forms.Label()
+        Me.Panel13 = New System.Windows.Forms.Panel()
+        Me.tb_amount = New System.Windows.Forms.TextBox()
+        Me.Label30 = New System.Windows.Forms.Label()
         Me.Panel6 = New System.Windows.Forms.Panel()
         Me.tb_profit = New System.Windows.Forms.TextBox()
         Me.lb = New System.Windows.Forms.Label()
@@ -113,6 +126,36 @@ Partial Class Form1
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.tb_purchase = New System.Windows.Forms.TextBox()
         Me.Label12 = New System.Windows.Forms.Label()
+        Me.pn_expense = New System.Windows.Forms.Panel()
+        Me.Panel8 = New System.Windows.Forms.Panel()
+        Me.Panel12 = New System.Windows.Forms.Panel()
+        Me.total_expense = New System.Windows.Forms.TextBox()
+        Me.Label29 = New System.Windows.Forms.Label()
+        Me.exp_end_date = New System.Windows.Forms.DateTimePicker()
+        Me.exp_start_date = New System.Windows.Forms.DateTimePicker()
+        Me.Label27 = New System.Windows.Forms.Label()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Label28 = New System.Windows.Forms.Label()
+        Me.Panel11 = New System.Windows.Forms.Panel()
+        Me.txt_exp_type = New System.Windows.Forms.ComboBox()
+        Me.txt_exp_descr = New System.Windows.Forms.TextBox()
+        Me.exp_date = New System.Windows.Forms.DateTimePicker()
+        Me.txt_exp_id = New System.Windows.Forms.TextBox()
+        Me.Label26 = New System.Windows.Forms.Label()
+        Me.Label21 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
+        Me.Label25 = New System.Windows.Forms.Label()
+        Me.txt_exp_amt = New System.Windows.Forms.TextBox()
+        Me.DataGridView4 = New System.Windows.Forms.DataGridView()
+        Me.btn_exp_print = New System.Windows.Forms.Button()
+        Me.btn_exp_delete = New System.Windows.Forms.Button()
+        Me.btn_exp_update = New System.Windows.Forms.Button()
+        Me.add_expense_btn = New System.Windows.Forms.Button()
+        Me.pn_expired = New System.Windows.Forms.Panel()
+        Me.TextBox1 = New System.Windows.Forms.TextBox()
+        Me.Label31 = New System.Windows.Forms.Label()
+        Me.Label32 = New System.Windows.Forms.Label()
+        Me.Label33 = New System.Windows.Forms.Label()
         Me.pn_login.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.pn_register.SuspendLayout()
@@ -130,9 +173,16 @@ Partial Class Form1
         CType(Me.DataGridView2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Panel9.SuspendLayout()
         Me.Panel5.SuspendLayout()
+        Me.Panel13.SuspendLayout()
         Me.Panel6.SuspendLayout()
         Me.Panel7.SuspendLayout()
         Me.Panel2.SuspendLayout()
+        Me.pn_expense.SuspendLayout()
+        Me.Panel8.SuspendLayout()
+        Me.Panel12.SuspendLayout()
+        Me.Panel11.SuspendLayout()
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.pn_expired.SuspendLayout()
         Me.SuspendLayout()
         '
         'pn_login
@@ -268,6 +318,7 @@ Partial Class Form1
         Me.pn_users.Controls.Add(Me.btn_delete)
         Me.pn_users.Controls.Add(Me.btn_update)
         Me.pn_users.Controls.Add(Me.btn_add)
+        Me.pn_users.Controls.Add(Me.product_search_txt)
         resources.ApplyResources(Me.pn_users, "pn_users")
         Me.pn_users.Name = "pn_users"
         '
@@ -275,6 +326,7 @@ Partial Class Form1
         '
         Me.Panel1.BackColor = System.Drawing.Color.Gainsboro
         Me.Panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel1.Controls.Add(Me.product_change)
         Me.Panel1.Controls.Add(Me.txt_id)
         Me.Panel1.Controls.Add(Me.Label7)
         Me.Panel1.Controls.Add(Me.txt_purchase)
@@ -284,6 +336,11 @@ Partial Class Form1
         Me.Panel1.Controls.Add(Me.txt_sale)
         resources.ApplyResources(Me.Panel1, "Panel1")
         Me.Panel1.Name = "Panel1"
+        '
+        'product_change
+        '
+        resources.ApplyResources(Me.product_change, "product_change")
+        Me.product_change.Name = "product_change"
         '
         'txt_id
         '
@@ -326,22 +383,31 @@ Partial Class Form1
         Me.DataGridView1.AllowUserToResizeColumns = False
         Me.DataGridView1.AllowUserToResizeRows = False
         Me.DataGridView1.BackgroundColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle1.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle1
         Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView1.DefaultCellStyle = DataGridViewCellStyle2
         resources.ApplyResources(Me.DataGridView1, "DataGridView1")
         Me.DataGridView1.Name = "DataGridView1"
         Me.DataGridView1.ReadOnly = True
         Me.DataGridView1.RowHeadersVisible = False
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle8.NullValue = Nothing
-        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle3.NullValue = Nothing
+        Me.DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle3
+        Me.DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         '
         'btn_delete
         '
@@ -366,6 +432,13 @@ Partial Class Form1
         Me.btn_add.ForeColor = System.Drawing.Color.White
         Me.btn_add.Name = "btn_add"
         Me.btn_add.UseVisualStyleBackColor = False
+        '
+        'product_search_txt
+        '
+        Me.product_search_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.product_search_txt, "product_search_txt")
+        Me.product_search_txt.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.product_search_txt.Name = "product_search_txt"
         '
         'pn_help
         '
@@ -439,6 +512,7 @@ Partial Class Form1
         Me.pn_transaction.Controls.Add(Me.GroupBox2)
         Me.pn_transaction.Controls.Add(Me.GroupBox1)
         Me.pn_transaction.Controls.Add(Me.Panel5)
+        Me.pn_transaction.Controls.Add(Me.Panel13)
         Me.pn_transaction.Controls.Add(Me.Panel6)
         Me.pn_transaction.Controls.Add(Me.Panel7)
         Me.pn_transaction.Controls.Add(Me.Panel2)
@@ -490,11 +564,19 @@ Partial Class Form1
         '
         'GroupBox2
         '
+        Me.GroupBox2.Controls.Add(Me.stock_search_txt)
         Me.GroupBox2.Controls.Add(Me.DataGridView3)
         resources.ApplyResources(Me.GroupBox2, "GroupBox2")
         Me.GroupBox2.ForeColor = System.Drawing.SystemColors.GrayText
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.TabStop = False
+        '
+        'stock_search_txt
+        '
+        Me.stock_search_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.stock_search_txt, "stock_search_txt")
+        Me.stock_search_txt.ForeColor = System.Drawing.SystemColors.WindowFrame
+        Me.stock_search_txt.Name = "stock_search_txt"
         '
         'DataGridView3
         '
@@ -502,36 +584,52 @@ Partial Class Form1
         Me.DataGridView3.AllowUserToResizeColumns = False
         Me.DataGridView3.AllowUserToResizeRows = False
         Me.DataGridView3.BackgroundColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView3.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.DataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.Desktop
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.Desktop
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView3.DefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.GrayText
+        DataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.Desktop
+        DataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView3.DefaultCellStyle = DataGridViewCellStyle5
         Me.DataGridView3.GridColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.DataGridView3, "DataGridView3")
         Me.DataGridView3.Name = "DataGridView3"
         Me.DataGridView3.ReadOnly = True
         Me.DataGridView3.RowHeadersVisible = False
-        DataGridViewCellStyle10.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle10.NullValue = Nothing
-        Me.DataGridView3.RowsDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle6.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle6.NullValue = Nothing
+        Me.DataGridView3.RowsDefaultCellStyle = DataGridViewCellStyle6
         Me.DataGridView3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.DataGridView2)
         Me.GroupBox1.Controls.Add(Me.radio_btn_sale)
+        Me.GroupBox1.Controls.Add(Me.DataGridView2)
         Me.GroupBox1.Controls.Add(Me.radio_btn_purchase)
         Me.GroupBox1.Controls.Add(Me.radio_btn_all)
         Me.GroupBox1.Controls.Add(Me.Panel9)
+        Me.GroupBox1.Controls.Add(Me.cb_product)
         resources.ApplyResources(Me.GroupBox1, "GroupBox1")
         Me.GroupBox1.ForeColor = System.Drawing.SystemColors.GrayText
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.TabStop = False
+        '
+        'radio_btn_sale
+        '
+        resources.ApplyResources(Me.radio_btn_sale, "radio_btn_sale")
+        Me.radio_btn_sale.ForeColor = System.Drawing.SystemColors.InactiveCaptionText
+        Me.radio_btn_sale.Name = "radio_btn_sale"
+        Me.radio_btn_sale.UseVisualStyleBackColor = True
         '
         'DataGridView2
         '
@@ -540,31 +638,24 @@ Partial Class Form1
         Me.DataGridView2.AllowUserToResizeRows = False
         Me.DataGridView2.BackgroundColor = System.Drawing.Color.White
         Me.DataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window
-        DataGridViewCellStyle11.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
-        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.Desktop
-        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.Gainsboro
-        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.Desktop
-        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle11
+        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle7.Font = New System.Drawing.Font("Calibri", 9.75!, System.Drawing.FontStyle.Bold)
+        DataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.GrayText
+        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Gainsboro
+        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.Desktop
+        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView2.DefaultCellStyle = DataGridViewCellStyle7
         Me.DataGridView2.GridColor = System.Drawing.SystemColors.ActiveBorder
         resources.ApplyResources(Me.DataGridView2, "DataGridView2")
         Me.DataGridView2.Name = "DataGridView2"
         Me.DataGridView2.ReadOnly = True
         Me.DataGridView2.RowHeadersVisible = False
-        DataGridViewCellStyle12.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle12.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle12.NullValue = Nothing
-        Me.DataGridView2.RowsDefaultCellStyle = DataGridViewCellStyle12
+        DataGridViewCellStyle8.Font = New System.Drawing.Font("Calibri", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle8.NullValue = Nothing
+        Me.DataGridView2.RowsDefaultCellStyle = DataGridViewCellStyle8
         Me.DataGridView2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        '
-        'radio_btn_sale
-        '
-        resources.ApplyResources(Me.radio_btn_sale, "radio_btn_sale")
-        Me.radio_btn_sale.ForeColor = System.Drawing.SystemColors.InactiveCaptionText
-        Me.radio_btn_sale.Name = "radio_btn_sale"
-        Me.radio_btn_sale.UseVisualStyleBackColor = True
         '
         'radio_btn_purchase
         '
@@ -585,6 +676,7 @@ Partial Class Form1
         'Panel9
         '
         Me.Panel9.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel9.Controls.Add(Me.all_product)
         Me.Panel9.Controls.Add(Me.tb_id)
         Me.Panel9.Controls.Add(Me.update_trans_btn)
         Me.Panel9.Controls.Add(Me.add_trans_btn)
@@ -594,12 +686,16 @@ Partial Class Form1
         Me.Panel9.Controls.Add(Me.cb_transaction)
         Me.Panel9.Controls.Add(Me.Label20)
         Me.Panel9.Controls.Add(Me.Label16)
-        Me.Panel9.Controls.Add(Me.cb_product)
         Me.Panel9.Controls.Add(Me.Label19)
         Me.Panel9.Controls.Add(Me.Label18)
         Me.Panel9.Controls.Add(Me.Label15)
         resources.ApplyResources(Me.Panel9, "Panel9")
         Me.Panel9.Name = "Panel9"
+        '
+        'all_product
+        '
+        resources.ApplyResources(Me.all_product, "all_product")
+        Me.all_product.Name = "all_product"
         '
         'tb_id
         '
@@ -657,12 +753,6 @@ Partial Class Form1
         Me.Label16.ForeColor = System.Drawing.SystemColors.Desktop
         Me.Label16.Name = "Label16"
         '
-        'cb_product
-        '
-        Me.cb_product.FormattingEnabled = True
-        resources.ApplyResources(Me.cb_product, "cb_product")
-        Me.cb_product.Name = "cb_product"
-        '
         'Label19
         '
         resources.ApplyResources(Me.Label19, "Label19")
@@ -680,6 +770,12 @@ Partial Class Form1
         resources.ApplyResources(Me.Label15, "Label15")
         Me.Label15.ForeColor = System.Drawing.SystemColors.Desktop
         Me.Label15.Name = "Label15"
+        '
+        'cb_product
+        '
+        Me.cb_product.FormattingEnabled = True
+        resources.ApplyResources(Me.cb_product, "cb_product")
+        Me.cb_product.Name = "cb_product"
         '
         'Panel5
         '
@@ -703,6 +799,29 @@ Partial Class Form1
         Me.Label17.BackColor = System.Drawing.Color.Transparent
         Me.Label17.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label17.Name = "Label17"
+        '
+        'Panel13
+        '
+        Me.Panel13.BackColor = System.Drawing.Color.Silver
+        Me.Panel13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Panel13.Controls.Add(Me.tb_amount)
+        Me.Panel13.Controls.Add(Me.Label30)
+        resources.ApplyResources(Me.Panel13, "Panel13")
+        Me.Panel13.Name = "Panel13"
+        '
+        'tb_amount
+        '
+        Me.tb_amount.BackColor = System.Drawing.Color.Gainsboro
+        Me.tb_amount.BorderStyle = System.Windows.Forms.BorderStyle.None
+        resources.ApplyResources(Me.tb_amount, "tb_amount")
+        Me.tb_amount.Name = "tb_amount"
+        '
+        'Label30
+        '
+        resources.ApplyResources(Me.Label30, "Label30")
+        Me.Label30.BackColor = System.Drawing.Color.Transparent
+        Me.Label30.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label30.Name = "Label30"
         '
         'Panel6
         '
@@ -773,6 +892,252 @@ Partial Class Form1
         Me.Label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
         Me.Label12.Name = "Label12"
         '
+        'pn_expense
+        '
+        Me.pn_expense.Controls.Add(Me.Panel8)
+        Me.pn_expense.Controls.Add(Me.Panel11)
+        Me.pn_expense.Controls.Add(Me.DataGridView4)
+        Me.pn_expense.Controls.Add(Me.btn_exp_print)
+        Me.pn_expense.Controls.Add(Me.btn_exp_delete)
+        Me.pn_expense.Controls.Add(Me.btn_exp_update)
+        Me.pn_expense.Controls.Add(Me.add_expense_btn)
+        resources.ApplyResources(Me.pn_expense, "pn_expense")
+        Me.pn_expense.Name = "pn_expense"
+        '
+        'Panel8
+        '
+        Me.Panel8.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel8.Controls.Add(Me.Panel12)
+        Me.Panel8.Controls.Add(Me.exp_end_date)
+        Me.Panel8.Controls.Add(Me.exp_start_date)
+        Me.Panel8.Controls.Add(Me.Label27)
+        Me.Panel8.Controls.Add(Me.Button7)
+        Me.Panel8.Controls.Add(Me.Label28)
+        resources.ApplyResources(Me.Panel8, "Panel8")
+        Me.Panel8.Name = "Panel8"
+        '
+        'Panel12
+        '
+        Me.Panel12.BackColor = System.Drawing.Color.Silver
+        Me.Panel12.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel12.Controls.Add(Me.total_expense)
+        Me.Panel12.Controls.Add(Me.Label29)
+        resources.ApplyResources(Me.Panel12, "Panel12")
+        Me.Panel12.Name = "Panel12"
+        '
+        'total_expense
+        '
+        Me.total_expense.BackColor = System.Drawing.Color.Gainsboro
+        Me.total_expense.BorderStyle = System.Windows.Forms.BorderStyle.None
+        resources.ApplyResources(Me.total_expense, "total_expense")
+        Me.total_expense.Name = "total_expense"
+        '
+        'Label29
+        '
+        resources.ApplyResources(Me.Label29, "Label29")
+        Me.Label29.BackColor = System.Drawing.Color.Transparent
+        Me.Label29.ForeColor = System.Drawing.SystemColors.ActiveCaptionText
+        Me.Label29.Name = "Label29"
+        '
+        'exp_end_date
+        '
+        resources.ApplyResources(Me.exp_end_date, "exp_end_date")
+        Me.exp_end_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.exp_end_date.Name = "exp_end_date"
+        '
+        'exp_start_date
+        '
+        resources.ApplyResources(Me.exp_start_date, "exp_start_date")
+        Me.exp_start_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.exp_start_date.Name = "exp_start_date"
+        '
+        'Label27
+        '
+        resources.ApplyResources(Me.Label27, "Label27")
+        Me.Label27.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Label27.Name = "Label27"
+        '
+        'Button7
+        '
+        Me.Button7.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        resources.ApplyResources(Me.Button7, "Button7")
+        Me.Button7.ForeColor = System.Drawing.SystemColors.Info
+        Me.Button7.Name = "Button7"
+        Me.Button7.UseVisualStyleBackColor = False
+        '
+        'Label28
+        '
+        resources.ApplyResources(Me.Label28, "Label28")
+        Me.Label28.ForeColor = System.Drawing.SystemColors.Desktop
+        Me.Label28.Name = "Label28"
+        '
+        'Panel11
+        '
+        Me.Panel11.BackColor = System.Drawing.Color.Gainsboro
+        Me.Panel11.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Panel11.Controls.Add(Me.txt_exp_type)
+        Me.Panel11.Controls.Add(Me.txt_exp_descr)
+        Me.Panel11.Controls.Add(Me.exp_date)
+        Me.Panel11.Controls.Add(Me.txt_exp_id)
+        Me.Panel11.Controls.Add(Me.Label26)
+        Me.Panel11.Controls.Add(Me.Label21)
+        Me.Panel11.Controls.Add(Me.Label23)
+        Me.Panel11.Controls.Add(Me.Label25)
+        Me.Panel11.Controls.Add(Me.txt_exp_amt)
+        resources.ApplyResources(Me.Panel11, "Panel11")
+        Me.Panel11.Name = "Panel11"
+        '
+        'txt_exp_type
+        '
+        resources.ApplyResources(Me.txt_exp_type, "txt_exp_type")
+        Me.txt_exp_type.FormattingEnabled = True
+        Me.txt_exp_type.Name = "txt_exp_type"
+        '
+        'txt_exp_descr
+        '
+        resources.ApplyResources(Me.txt_exp_descr, "txt_exp_descr")
+        Me.txt_exp_descr.Name = "txt_exp_descr"
+        '
+        'exp_date
+        '
+        resources.ApplyResources(Me.exp_date, "exp_date")
+        Me.exp_date.Format = System.Windows.Forms.DateTimePickerFormat.Custom
+        Me.exp_date.Name = "exp_date"
+        '
+        'txt_exp_id
+        '
+        resources.ApplyResources(Me.txt_exp_id, "txt_exp_id")
+        Me.txt_exp_id.Name = "txt_exp_id"
+        '
+        'Label26
+        '
+        resources.ApplyResources(Me.Label26, "Label26")
+        Me.Label26.Name = "Label26"
+        '
+        'Label21
+        '
+        resources.ApplyResources(Me.Label21, "Label21")
+        Me.Label21.Name = "Label21"
+        '
+        'Label23
+        '
+        resources.ApplyResources(Me.Label23, "Label23")
+        Me.Label23.Name = "Label23"
+        '
+        'Label25
+        '
+        resources.ApplyResources(Me.Label25, "Label25")
+        Me.Label25.Name = "Label25"
+        '
+        'txt_exp_amt
+        '
+        resources.ApplyResources(Me.txt_exp_amt, "txt_exp_amt")
+        Me.txt_exp_amt.Name = "txt_exp_amt"
+        '
+        'DataGridView4
+        '
+        Me.DataGridView4.AllowUserToAddRows = False
+        Me.DataGridView4.AllowUserToResizeColumns = False
+        Me.DataGridView4.AllowUserToResizeRows = False
+        Me.DataGridView4.BackgroundColor = System.Drawing.Color.White
+        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle9.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.Desktop
+        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView4.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle9
+        Me.DataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        DataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Window
+        DataGridViewCellStyle10.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.ControlText
+        DataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.Desktop
+        DataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.DataGridView4.DefaultCellStyle = DataGridViewCellStyle10
+        resources.ApplyResources(Me.DataGridView4, "DataGridView4")
+        Me.DataGridView4.Name = "DataGridView4"
+        Me.DataGridView4.ReadOnly = True
+        DataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle11.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Control
+        DataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.Desktop
+        DataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.DataGridView4.RowHeadersDefaultCellStyle = DataGridViewCellStyle11
+        Me.DataGridView4.RowHeadersVisible = False
+        DataGridViewCellStyle12.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle12.NullValue = Nothing
+        Me.DataGridView4.RowsDefaultCellStyle = DataGridViewCellStyle12
+        Me.DataGridView4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
+        '
+        'btn_exp_print
+        '
+        Me.btn_exp_print.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        resources.ApplyResources(Me.btn_exp_print, "btn_exp_print")
+        Me.btn_exp_print.ForeColor = System.Drawing.Color.White
+        Me.btn_exp_print.Name = "btn_exp_print"
+        Me.btn_exp_print.UseVisualStyleBackColor = False
+        '
+        'btn_exp_delete
+        '
+        Me.btn_exp_delete.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        resources.ApplyResources(Me.btn_exp_delete, "btn_exp_delete")
+        Me.btn_exp_delete.ForeColor = System.Drawing.Color.White
+        Me.btn_exp_delete.Name = "btn_exp_delete"
+        Me.btn_exp_delete.UseVisualStyleBackColor = False
+        '
+        'btn_exp_update
+        '
+        Me.btn_exp_update.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        resources.ApplyResources(Me.btn_exp_update, "btn_exp_update")
+        Me.btn_exp_update.ForeColor = System.Drawing.Color.White
+        Me.btn_exp_update.Name = "btn_exp_update"
+        Me.btn_exp_update.UseVisualStyleBackColor = False
+        '
+        'add_expense_btn
+        '
+        Me.add_expense_btn.BackColor = System.Drawing.SystemColors.ActiveCaptionText
+        resources.ApplyResources(Me.add_expense_btn, "add_expense_btn")
+        Me.add_expense_btn.ForeColor = System.Drawing.Color.White
+        Me.add_expense_btn.Name = "add_expense_btn"
+        Me.add_expense_btn.UseVisualStyleBackColor = False
+        '
+        'pn_expired
+        '
+        Me.pn_expired.Controls.Add(Me.TextBox1)
+        Me.pn_expired.Controls.Add(Me.Label31)
+        Me.pn_expired.Controls.Add(Me.Label32)
+        Me.pn_expired.Controls.Add(Me.Label33)
+        resources.ApplyResources(Me.pn_expired, "pn_expired")
+        Me.pn_expired.Name = "pn_expired"
+        '
+        'TextBox1
+        '
+        Me.TextBox1.BackColor = System.Drawing.SystemColors.Info
+        Me.TextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        resources.ApplyResources(Me.TextBox1, "TextBox1")
+        Me.TextBox1.Name = "TextBox1"
+        Me.TextBox1.ReadOnly = True
+        '
+        'Label31
+        '
+        resources.ApplyResources(Me.Label31, "Label31")
+        Me.Label31.Name = "Label31"
+        '
+        'Label32
+        '
+        resources.ApplyResources(Me.Label32, "Label32")
+        Me.Label32.Name = "Label32"
+        '
+        'Label33
+        '
+        resources.ApplyResources(Me.Label33, "Label33")
+        Me.Label33.Name = "Label33"
+        '
         'Form1
         '
         resources.ApplyResources(Me, "$this")
@@ -783,6 +1148,8 @@ Partial Class Form1
         Me.Controls.Add(Me.pn_register)
         Me.Controls.Add(Me.pn_help)
         Me.Controls.Add(Me.pn_transaction)
+        Me.Controls.Add(Me.pn_expense)
+        Me.Controls.Add(Me.pn_expired)
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.ShowIcon = False
@@ -793,6 +1160,7 @@ Partial Class Form1
         Me.Panel3.ResumeLayout(False)
         Me.Panel3.PerformLayout()
         Me.pn_users.ResumeLayout(False)
+        Me.pn_users.PerformLayout()
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -804,6 +1172,7 @@ Partial Class Form1
         Me.Panel10.ResumeLayout(False)
         Me.Panel10.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
+        Me.GroupBox2.PerformLayout()
         CType(Me.DataGridView3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
@@ -812,12 +1181,24 @@ Partial Class Form1
         Me.Panel9.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
+        Me.Panel13.ResumeLayout(False)
+        Me.Panel13.PerformLayout()
         Me.Panel6.ResumeLayout(False)
         Me.Panel6.PerformLayout()
         Me.Panel7.ResumeLayout(False)
         Me.Panel7.PerformLayout()
         Me.Panel2.ResumeLayout(False)
         Me.Panel2.PerformLayout()
+        Me.pn_expense.ResumeLayout(False)
+        Me.Panel8.ResumeLayout(False)
+        Me.Panel8.PerformLayout()
+        Me.Panel12.ResumeLayout(False)
+        Me.Panel12.PerformLayout()
+        Me.Panel11.ResumeLayout(False)
+        Me.Panel11.PerformLayout()
+        CType(Me.DataGridView4, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.pn_expired.ResumeLayout(False)
+        Me.pn_expired.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -911,4 +1292,41 @@ Partial Class Form1
     Friend WithEvents tb_quantity As TextBox
     Friend WithEvents tb_purchase As TextBox
     Friend WithEvents tb_id As TextBox
+    Friend WithEvents all_product As TextBox
+    Friend WithEvents pn_expense As Panel
+    Friend WithEvents Panel8 As Panel
+    Friend WithEvents exp_end_date As DateTimePicker
+    Friend WithEvents exp_start_date As DateTimePicker
+    Friend WithEvents Label27 As Label
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Label28 As Label
+    Friend WithEvents Panel11 As Panel
+    Friend WithEvents txt_exp_descr As TextBox
+    Friend WithEvents exp_date As DateTimePicker
+    Friend WithEvents txt_exp_id As TextBox
+    Friend WithEvents Label26 As Label
+    Friend WithEvents Label21 As Label
+    Friend WithEvents Label23 As Label
+    Friend WithEvents Label25 As Label
+    Friend WithEvents txt_exp_amt As TextBox
+    Friend WithEvents DataGridView4 As DataGridView
+    Friend WithEvents btn_exp_print As Button
+    Friend WithEvents btn_exp_delete As Button
+    Friend WithEvents btn_exp_update As Button
+    Friend WithEvents add_expense_btn As Button
+    Friend WithEvents txt_exp_type As ComboBox
+    Friend WithEvents Panel12 As Panel
+    Friend WithEvents total_expense As TextBox
+    Friend WithEvents Label29 As Label
+    Friend WithEvents product_change As TextBox
+    Friend WithEvents stock_search_txt As TextBox
+    Friend WithEvents product_search_txt As TextBox
+    Friend WithEvents Panel13 As Panel
+    Friend WithEvents tb_amount As TextBox
+    Friend WithEvents Label30 As Label
+    Friend WithEvents pn_expired As Panel
+    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents Label31 As Label
+    Friend WithEvents Label32 As Label
+    Friend WithEvents Label33 As Label
 End Class

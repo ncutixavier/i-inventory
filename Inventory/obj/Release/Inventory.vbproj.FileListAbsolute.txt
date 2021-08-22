@@ -1,0 +1,92 @@
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Release\inventory.accdb
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Release\Inventory.exe.config
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Release\Inventory.exe
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Release\Inventory.pdb
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Release\Inventory.xml
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Release\aa\Inventory.resources.dll
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Release\Inventory.Form1.resources
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Release\Inventory.Form2.resources
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Release\Inventory.Resources.resources
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Release\Inventory.Form1.aa.resources
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Release\Inventory.vbproj.GenerateResource.cache
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Release\Inventory.vbproj.CoreCompileInputs.cache
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Release\aa\Inventory.resources.dll
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Release\Inventory.exe
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Release\Inventory.xml
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Release\Inventory.pdb
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Release\ExcelNumberFormat.dll
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Release\ExcelNumberFormat.xml
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Release\Inventory.vbproj.CopyComplete
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Release\Inventory.vbprojAssemblyReference.cache
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Release\System.IO.FileSystem.Primitives.dll
+C:\Users\ncuti\source\repos\Inventory\Inventory\bin\Release\System.IO.Packaging.dll
+C:\Users\ncuti\source\repos\Inventory\Inventory\obj\Release\Inventory.vbproj.ResolveComReference.cache
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\bin\Release\inventory.accdb
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\bin\Release\Inventory.exe.config
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\bin\Release\Inventory.exe
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\bin\Release\Inventory.pdb
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\bin\Release\Inventory.xml
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\bin\Release\aa\Inventory.resources.dll
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\bin\Release\ExcelNumberFormat.dll
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\bin\Release\System.IO.FileSystem.Primitives.dll
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\bin\Release\System.IO.Packaging.dll
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\bin\Release\ExcelNumberFormat.xml
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\obj\Release\Inventory.vbprojAssemblyReference.cache
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\obj\Release\Inventory.vbproj.ResolveComReference.cache
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\obj\Release\Inventory.Form1.resources
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\obj\Release\Inventory.Form2.resources
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\obj\Release\Inventory.Resources.resources
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\obj\Release\Inventory.Form1.aa.resources
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\obj\Release\Inventory.vbproj.GenerateResource.cache
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\obj\Release\Inventory.vbproj.CoreCompileInputs.cache
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\obj\Release\aa\Inventory.resources.dll
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\obj\Release\Inventory.vbproj.CopyComplete
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\obj\Release\Inventory.exe
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\obj\Release\Inventory.xml
+C:\Users\ncuti\source\repos\Inventory latest\Inventory\obj\Release\Inventory.pdb
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\bin\Release\inventory.accdb
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\bin\Release\Inventory.exe.config
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\bin\Release\Inventory.exe
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\bin\Release\Inventory.pdb
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\bin\Release\Inventory.xml
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\bin\Release\aa\Inventory.resources.dll
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\bin\Release\ExcelNumberFormat.dll
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\bin\Release\System.IO.FileSystem.Primitives.dll
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\bin\Release\System.IO.Packaging.dll
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\bin\Release\ExcelNumberFormat.xml
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\obj\Release\Inventory.vbprojAssemblyReference.cache
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\obj\Release\Inventory.vbproj.ResolveComReference.cache
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\obj\Release\Inventory.Form1.resources
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\obj\Release\Inventory.Form2.resources
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\obj\Release\Inventory.Resources.resources
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\obj\Release\Inventory.Form1.aa.resources
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\obj\Release\Inventory.vbproj.GenerateResource.cache
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\obj\Release\Inventory.vbproj.CoreCompileInputs.cache
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\obj\Release\aa\Inventory.resources.dll
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\obj\Release\Inventory.vbproj.CopyComplete
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\obj\Release\Inventory.exe
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\obj\Release\Inventory.xml
+C:\Users\ncuti\source\repos\Inventory - shop\Inventory\obj\Release\Inventory.pdb
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\bin\Release\inventory.accdb
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\bin\Release\Inventory.exe.config
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\bin\Release\Inventory.exe
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\bin\Release\Inventory.pdb
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\bin\Release\Inventory.xml
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\bin\Release\aa\Inventory.resources.dll
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\bin\Release\ExcelNumberFormat.dll
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\bin\Release\System.IO.FileSystem.Primitives.dll
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\bin\Release\System.IO.Packaging.dll
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\bin\Release\ExcelNumberFormat.xml
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\obj\Release\Inventory.vbproj.ResolveComReference.cache
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\obj\Release\Inventory.Form1.resources
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\obj\Release\Inventory.Form2.resources
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\obj\Release\Inventory.Resources.resources
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\obj\Release\Inventory.Form1.aa.resources
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\obj\Release\Inventory.vbproj.GenerateResource.cache
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\obj\Release\Inventory.vbproj.CoreCompileInputs.cache
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\obj\Release\aa\Inventory.resources.dll
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\obj\Release\Inventory.vbproj.CopyComplete
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\obj\Release\Inventory.exe
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\obj\Release\Inventory.xml
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\obj\Release\Inventory.pdb
+C:\Users\ncuti\source\repos\Inventory - shop - version\Inventory\obj\Release\Inventory.vbprojAssemblyReference.cache
