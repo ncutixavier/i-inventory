@@ -661,10 +661,145 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pn_register.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="Label36.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label36.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 12pt</value>
+  </data>
+  <data name="Label36.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label36.Location" type="System.Drawing.Point, System.Drawing">
+    <value>617, 445</value>
+  </data>
+  <data name="Label36.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 19</value>
+  </data>
+  <data name="Label36.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Label36.Text" xml:space="preserve">
+    <value>Remain 1 month</value>
+  </data>
+  <data name="&gt;&gt;Label36.Name" xml:space="preserve">
+    <value>Label36</value>
+  </data>
+  <data name="&gt;&gt;Label36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label36.Parent" xml:space="preserve">
+    <value>pn_users</value>
+  </data>
+  <data name="&gt;&gt;Label36.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Button3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>546, 443</value>
+  </data>
+  <data name="Button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>71, 22</value>
+  </data>
+  <data name="Button3.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;Button3.Name" xml:space="preserve">
+    <value>Button3</value>
+  </data>
+  <data name="&gt;&gt;Button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button3.Parent" xml:space="preserve">
+    <value>pn_users</value>
+  </data>
+  <data name="&gt;&gt;Button3.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Label35.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label35.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 12pt</value>
+  </data>
+  <data name="Label35.Location" type="System.Drawing.Point, System.Drawing">
+    <value>93, 445</value>
+  </data>
+  <data name="Label35.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 19</value>
+  </data>
+  <data name="Label35.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="Label35.Text" xml:space="preserve">
+    <value>Already expired</value>
+  </data>
+  <data name="&gt;&gt;Label35.Name" xml:space="preserve">
+    <value>Label35</value>
+  </data>
+  <data name="&gt;&gt;Label35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label35.Parent" xml:space="preserve">
+    <value>pn_users</value>
+  </data>
+  <data name="&gt;&gt;Label35.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>19, 442</value>
+  </data>
+  <data name="Button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 24</value>
+  </data>
+  <data name="Button2.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;Button2.Name" xml:space="preserve">
+    <value>Button2</value>
+  </data>
+  <data name="&gt;&gt;Button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button2.Parent" xml:space="preserve">
+    <value>pn_users</value>
+  </data>
+  <data name="&gt;&gt;Button2.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="expired_date.CustomFormat" xml:space="preserve">
+    <value>MM/dd/yyyy</value>
+  </data>
+  <data name="expired_date.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 9.75pt</value>
+  </data>
+  <data name="expired_date.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 42</value>
+  </data>
+  <data name="expired_date.Size" type="System.Drawing.Size, System.Drawing">
+    <value>172, 23</value>
+  </data>
+  <data name="expired_date.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;expired_date.Name" xml:space="preserve">
+    <value>expired_date</value>
+  </data>
+  <data name="&gt;&gt;expired_date.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DateTimePicker, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;expired_date.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;expired_date.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="product_change.Location" type="System.Drawing.Point, System.Drawing">
-    <value>601, 9</value>
+    <value>310, 29</value>
   </data>
   <data name="product_change.Size" type="System.Drawing.Size, System.Drawing">
     <value>100, 20</value>
@@ -685,10 +820,10 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;product_change.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="txt_id.Location" type="System.Drawing.Point, System.Drawing">
-    <value>684, 33</value>
+    <value>415, 29</value>
   </data>
   <data name="txt_id.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 20</value>
@@ -709,7 +844,7 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;txt_id.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="Label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -721,7 +856,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>478, 10</value>
+    <value>453, 41</value>
   </data>
   <data name="Label7.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
@@ -745,13 +880,13 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="txt_purchase.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 10pt</value>
   </data>
   <data name="txt_purchase.Location" type="System.Drawing.Point, System.Drawing">
-    <value>245, 34</value>
+    <value>538, 6</value>
   </data>
   <data name="txt_purchase.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -772,7 +907,43 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;txt_purchase.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
+  </data>
+  <data name="Label34.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label34.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 12pt</value>
+  </data>
+  <data name="Label34.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label34.Location" type="System.Drawing.Point, System.Drawing">
+    <value>22, 44</value>
+  </data>
+  <data name="Label34.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>No</value>
+  </data>
+  <data name="Label34.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 19</value>
+  </data>
+  <data name="Label34.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Label34.Text" xml:space="preserve">
+    <value>Expired Date</value>
+  </data>
+  <data name="&gt;&gt;Label34.Name" xml:space="preserve">
+    <value>Label34</value>
+  </data>
+  <data name="&gt;&gt;Label34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label34.Parent" xml:space="preserve">
+    <value>Panel1</value>
+  </data>
+  <data name="&gt;&gt;Label34.ZOrder" xml:space="preserve">
+    <value>5</value>
   </data>
   <data name="Label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -784,7 +955,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>241, 10</value>
+    <value>421, 5</value>
   </data>
   <data name="Label6.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
@@ -808,19 +979,19 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>6</value>
   </data>
   <data name="txt_name.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 10pt</value>
   </data>
   <data name="txt_name.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 34</value>
+    <value>120, 6</value>
   </data>
   <data name="txt_name.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="txt_name.Size" type="System.Drawing.Size, System.Drawing">
-    <value>199, 20</value>
+    <value>172, 20</value>
   </data>
   <data name="txt_name.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -835,7 +1006,7 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;txt_name.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>7</value>
   </data>
   <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -847,7 +1018,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>14, 10</value>
+    <value>14, 5</value>
   </data>
   <data name="Label5.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
     <value>No</value>
@@ -871,13 +1042,13 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>8</value>
   </data>
   <data name="txt_sale.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 10pt</value>
   </data>
   <data name="txt_sale.Location" type="System.Drawing.Point, System.Drawing">
-    <value>482, 34</value>
+    <value>539, 41</value>
   </data>
   <data name="txt_sale.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -898,13 +1069,13 @@
     <value>Panel1</value>
   </data>
   <data name="&gt;&gt;txt_sale.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>9</value>
   </data>
   <data name="Panel1.Location" type="System.Drawing.Point, System.Drawing">
     <value>18, 42</value>
   </data>
   <data name="Panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>721, 72</value>
+    <value>721, 78</value>
   </data>
   <data name="Panel1.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -919,13 +1090,13 @@
     <value>pn_users</value>
   </data>
   <data name="&gt;&gt;Panel1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="DataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>18, 171</value>
+    <value>18, 170</value>
   </data>
   <data name="DataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>721, 289</value>
+    <value>721, 272</value>
   </data>
   <data name="DataGridView1.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -940,7 +1111,7 @@
     <value>pn_users</value>
   </data>
   <data name="&gt;&gt;DataGridView1.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="btn_delete.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
@@ -949,7 +1120,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_delete.Location" type="System.Drawing.Point, System.Drawing">
-    <value>398, 129</value>
+    <value>398, 127</value>
   </data>
   <data name="btn_delete.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 35</value>
@@ -970,7 +1141,7 @@
     <value>pn_users</value>
   </data>
   <data name="&gt;&gt;btn_delete.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>6</value>
   </data>
   <data name="btn_update.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
@@ -979,7 +1150,7 @@
     <value>NoControl</value>
   </data>
   <data name="btn_update.Location" type="System.Drawing.Point, System.Drawing">
-    <value>208, 129</value>
+    <value>208, 127</value>
   </data>
   <data name="btn_update.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 35</value>
@@ -1000,13 +1171,13 @@
     <value>pn_users</value>
   </data>
   <data name="&gt;&gt;btn_update.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>7</value>
   </data>
   <data name="btn_add.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 12pt</value>
   </data>
   <data name="btn_add.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 129</value>
+    <value>16, 127</value>
   </data>
   <data name="btn_add.Size" type="System.Drawing.Size, System.Drawing">
     <value>104, 35</value>
@@ -1027,13 +1198,13 @@
     <value>pn_users</value>
   </data>
   <data name="&gt;&gt;btn_add.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>8</value>
   </data>
   <data name="product_search_txt.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 13pt</value>
   </data>
   <data name="product_search_txt.Location" type="System.Drawing.Point, System.Drawing">
-    <value>559, 134</value>
+    <value>559, 132</value>
   </data>
   <data name="product_search_txt.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1057,7 +1228,7 @@
     <value>pn_users</value>
   </data>
   <data name="&gt;&gt;product_search_txt.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>9</value>
   </data>
   <data name="pn_users.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -1222,7 +1393,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pn_help.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <metadata name="MenuStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>295, 17</value>
@@ -1455,6 +1626,120 @@
   <data name="&gt;&gt;Panel10.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="Label38.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label38.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 9.75pt, style=Bold</value>
+  </data>
+  <data name="Label38.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label38.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 299</value>
+  </data>
+  <data name="Label38.Size" type="System.Drawing.Size, System.Drawing">
+    <value>85, 15</value>
+  </data>
+  <data name="Label38.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="Label38.Text" xml:space="preserve">
+    <value>Under 5 items</value>
+  </data>
+  <data name="&gt;&gt;Label38.Name" xml:space="preserve">
+    <value>Label38</value>
+  </data>
+  <data name="&gt;&gt;Label38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label38.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;Label38.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Label37.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Label37.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Calibri, 9.75pt, style=Bold</value>
+  </data>
+  <data name="Label37.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Label37.Location" type="System.Drawing.Point, System.Drawing">
+    <value>186, 299</value>
+  </data>
+  <data name="Label37.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 15</value>
+  </data>
+  <data name="Label37.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="Label37.Text" xml:space="preserve">
+    <value>Finished</value>
+  </data>
+  <data name="&gt;&gt;Label37.Name" xml:space="preserve">
+    <value>Label37</value>
+  </data>
+  <data name="&gt;&gt;Label37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label37.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;Label37.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Button5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 294</value>
+  </data>
+  <data name="Button5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>27, 24</value>
+  </data>
+  <data name="Button5.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Button5.Name" xml:space="preserve">
+    <value>Button5</value>
+  </data>
+  <data name="&gt;&gt;Button5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button5.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;Button5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="Button4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>159, 294</value>
+  </data>
+  <data name="Button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 24</value>
+  </data>
+  <data name="Button4.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;Button4.Name" xml:space="preserve">
+    <value>Button4</value>
+  </data>
+  <data name="&gt;&gt;Button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Button4.Parent" xml:space="preserve">
+    <value>GroupBox2</value>
+  </data>
+  <data name="&gt;&gt;Button4.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
   <data name="stock_search_txt.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 11.25pt</value>
   </data>
@@ -1480,13 +1765,13 @@
     <value>GroupBox2</value>
   </data>
   <data name="&gt;&gt;stock_search_txt.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>4</value>
   </data>
   <data name="DataGridView3.Location" type="System.Drawing.Point, System.Drawing">
     <value>7, 47</value>
   </data>
   <data name="DataGridView3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>231, 272</value>
+    <value>231, 245</value>
   </data>
   <data name="DataGridView3.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1501,7 +1786,7 @@
     <value>GroupBox2</value>
   </data>
   <data name="&gt;&gt;DataGridView3.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>5</value>
   </data>
   <data name="GroupBox2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Calibri, 9.75pt, style=Bold</value>
@@ -2518,7 +2803,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pn_transaction.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="total_expense.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
@@ -3379,7 +3664,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;pn_expired.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

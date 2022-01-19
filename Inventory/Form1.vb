@@ -12,6 +12,7 @@ Public Class Form1
             Dim cmd As New OleDb.OleDbCommand
             Dim dt As New DataTable
             Dim da As New OleDb.OleDbDataAdapter
+
             sql = "Select * from " + table_name + " ORDER BY " + sort_item
             cmd.Connection = con
             cmd.CommandText = sql
@@ -24,11 +25,46 @@ Public Class Form1
             If (table_name = "Transactions") Then
                 data_grid_name.Columns(7).Visible = False
             End If
+            data_grid_name.ClearSelection()
+            Call showExpiredAndItems(data_grid_name)
+
         Catch ex As Exception
-            MsgBox(ex.Message)
+            MsgBox("TEST::" + ex.Message)
         Finally
             con.Close()
         End Try
+    End Sub
+
+    Sub showExpiredAndItems(ByVal data_grid_name As DataGridView)
+        If data_grid_name Is DataGridView3 Then
+            For i As Integer = 0 To Me.DataGridView3.Rows.Count - 1
+                If DataGridView3.Rows(i).Cells(2).Value <= 0 Then
+                    DataGridView3.Rows(i).DefaultCellStyle.BackColor = Color.DarkRed
+                    DataGridView3.Rows(i).DefaultCellStyle.ForeColor = Color.White
+                ElseIf DataGridView3.Rows(i).Cells(2).Value > 0 And DataGridView3.Rows(i).Cells(2).Value < 5 Then
+                    DataGridView3.Rows(i).DefaultCellStyle.BackColor = Color.Goldenrod
+                    DataGridView3.Rows(i).DefaultCellStyle.ForeColor = Color.Black
+                End If
+            Next
+        ElseIf data_grid_name Is DataGridView1 Then
+            Dim today As DateTime = DateTime.Now
+            Dim expire As DateTime
+            For i As Integer = 0 To Me.DataGridView1.Rows.Count - 1
+                If String.IsNullOrEmpty(DataGridView1.Rows(i).Cells(4).Value.ToString()) Then
+                    DataGridView1.Rows(i).DefaultCellStyle.BackColor = Color.DarkRed
+                    DataGridView1.Rows(i).DefaultCellStyle.ForeColor = Color.White
+                Else
+                    expire = DataGridView1.Rows(i).Cells(4).Value
+                    If (expire - today).Days > 0 And (expire - today).Days <= 30 Then
+                        DataGridView1.Rows(i).DefaultCellStyle.BackColor = Color.Goldenrod
+                        DataGridView1.Rows(i).DefaultCellStyle.ForeColor = Color.Black
+                    ElseIf (expire - today).Days <= 0 Then
+                        DataGridView1.Rows(i).DefaultCellStyle.BackColor = Color.DarkRed
+                        DataGridView1.Rows(i).DefaultCellStyle.ForeColor = Color.White
+                    End If
+                End If
+            Next
+        End If
     End Sub
 
     Sub DisplayDataByDate(ByVal table_name As String, ByVal data_grid_name As DataGridView)
@@ -374,8 +410,8 @@ Public Class Form1
         pn_help.Visible = False
 
         'Call DisplayDataByDate("Transactions", DataGridView2)
-        Call DisplayData("Products", DataGridView1, "PRODUCT_NAME")
-        'Call DisplayData("Stock", DataGridView3, "PRODUCT")
+        Call DisplayData("Products", DataGridView1, "EXPIRED_DATE")
+        Call DisplayData("Stock", DataGridView3, "QUANTITY")
 
         cb_transaction.Items.Clear()
         cb_transaction.Items.Add("Sale")
@@ -389,7 +425,7 @@ Public Class Form1
         today = System.DateTime.Now
         'answer = today.AddDays(30)
         'answer = today.AddMinutes(2)
-        answer = #09/25/2021 00:00:00#
+        answer = #12/31/2022 00:00:00#
         'MsgBox("Today: " + today + "\nAnswer: " + answer)
         Dim result As Integer = DateTime.Compare(today, answer)
         'MsgBox(answer.ToString("MM\/dd\/yyyy"))
@@ -407,6 +443,7 @@ Public Class Form1
             pn_transaction.Visible = False
             MenuStrip1.Visible = False
         End If
+
     End Sub
 
     Private Sub btn_back_Click(sender As Object, e As EventArgs) Handles btn_back.Click
@@ -494,19 +531,19 @@ Public Class Form1
                 Dim cmd As New OleDb.OleDbCommand
                 Dim i As Integer
                 con.Open()
-                sql = "INSERT INTO Products (PRODUCT_NAME, PURCHASE_PRICE, SALE_PRICE) VALUES ('" & txt_name.Text & "', '" & txt_purchase.Text & "', '" & txt_sale.Text & "');"
+                sql = "INSERT INTO Products (PRODUCT_NAME, PURCHASE_PRICE, SALE_PRICE, EXPIRED_DATE) VALUES ('" & txt_name.Text & "', '" & txt_purchase.Text & "', '" & txt_sale.Text & "', '" & expired_date.Value.ToShortDateString & "');"
                 cmd.Connection = con
                 cmd.CommandText = sql
                 i = cmd.ExecuteNonQuery
                 If i > 0 Then
                     MsgBox("New product has been inserted successfully!", MsgBoxStyle.Information)
-                    Call DisplayData("Products", DataGridView1, "PRODUCT_NAME")
+                    Call DisplayData("Products", DataGridView1, "EXPIRED_DATE")
                     Call InsertProductInStock(txt_name.Text)
                     ''clear fields
                     txt_name.Text = ""
                     txt_purchase.Text = ""
                     txt_sale.Text = ""
-                    Call DisplayData("Stock", DataGridView3, "PRODUCT")
+                    Call DisplayData("Stock", DataGridView3, "QUANTITY")
                 Else
                     MsgBox("No product has been inserted successfully!")
                 End If
@@ -536,10 +573,17 @@ Public Class Form1
 
 
     Private Sub DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles DataGridView1.CellClick
+        Dim today As DateTime = DateTime.Now
         txt_id.Text = DataGridView1.CurrentRow.Cells(0).Value
         txt_name.Text = DataGridView1.CurrentRow.Cells(1).Value
         txt_purchase.Text = DataGridView1.CurrentRow.Cells(2).Value
         txt_sale.Text = DataGridView1.CurrentRow.Cells(3).Value
+        If String.IsNullOrEmpty(DataGridView1.CurrentRow.Cells(4).Value.ToString()) Then
+            expired_date.Value = today
+        Else
+            expired_date.Value = DataGridView1.CurrentRow.Cells(4).Value
+        End If
+
         product_change.Text = DataGridView1.CurrentRow.Cells(1).Value
     End Sub
 
@@ -562,7 +606,7 @@ Public Class Form1
                     If i > 0 Then
                         Call DeleteProductInStock()
                         MsgBox("Product has been deleted successfully!")
-                        Call DisplayData("Products", DataGridView1, "PRODUCT_NAME")
+                        Call DisplayData("Products", DataGridView1, "EXPIRED_DATE")
                         ''clear fields
                         txt_name.Text = ""
                         txt_purchase.Text = ""
@@ -623,7 +667,7 @@ Public Class Form1
                 Dim cmd As New OleDb.OleDbCommand
                 con.Open()
                 sql = "UPDATE Products SET PRODUCT_NAME='" & txt_name.Text & "', PURCHASE_PRICE='" & txt_purchase.Text & "', " &
-             " SALE_PRICE='" & txt_sale.Text & "' WHERE ID=" & Val(txt_id.Text) & ""
+             " SALE_PRICE='" & txt_sale.Text & "', EXPIRED_DATE= '" & expired_date.Value.ToShortDateString & "' WHERE ID=" & Val(txt_id.Text) & ""
                 cmd.Connection = con
                 cmd.CommandText = sql
 
@@ -631,7 +675,7 @@ Public Class Form1
                 If i > 0 Then
                     Call updateProductName(txt_name.Text)
                     MsgBox("Product has been updated successfully!")
-                    Call DisplayData("Products", DataGridView1, "PRODUCT_NAME")
+                    Call DisplayData("Products", DataGridView1, "EXPIRED_DATE")
                     txt_name.Text = ""
                     txt_purchase.Text = ""
                     txt_sale.Text = ""
@@ -686,7 +730,7 @@ Public Class Form1
         Call Print_Total_Stock()
 
         Call DisplayDataByDate("Transactions", DataGridView2)
-        Call DisplayData("Stock", DataGridView3, "PRODUCT")
+        Call DisplayData("Stock", DataGridView3, "QUANTITY")
         Call createAutocomplete("PRODUCT_NAME", "Products", all_product)
     End Sub
 
@@ -730,7 +774,7 @@ Public Class Form1
                             MsgBox("New Transaction has been added successfully!")
                             Call DisplayDataByDate("Transactions", DataGridView2)
                             Call updateProductInStock(all_product.Text, cb_transaction.Text, txt_quantity.Text)
-                            Call DisplayData("Stock", DataGridView3, "PRODUCT")
+                            Call DisplayData("Stock", DataGridView3, "QUANTITY")
                             Call getTotalQuantity()
                             Call Print_Profit()
                             Call Print_Sale()
@@ -811,7 +855,7 @@ Public Class Form1
                     MsgBox("Product has been updated successfully!")
                     Call DisplayDataByDate("Transactions", DataGridView2)
                     Call updateProductInStockByUpdatingTrans(all_product.Text, txt_quantity.Text)
-                    Call DisplayData("Stock", DataGridView3, "PRODUCT")
+                    Call DisplayData("Stock", DataGridView3, "QUANTITY")
                     Call getTotalQuantity()
                     Call Print_Profit()
                     Call Print_Sale()
@@ -877,7 +921,8 @@ Public Class Form1
             da.Fill(dt)
             data_grid_name.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill
             data_grid_name.DataSource = dt
-            'data_grid_name.Columns(0).Visible = False
+            data_grid_name.ClearSelection()
+            Call showExpiredAndItems(data_grid_name)
         Catch ex As Exception
             MsgBox(ex.Message)
         Finally
@@ -892,14 +937,14 @@ Public Class Form1
     Private Sub stock_search_txt_GotFocus(sender As Object, e As EventArgs) Handles stock_search_txt.GotFocus
         If stock_search_txt.Text = "Search..." Then
             stock_search_txt.Text = ""
-            Call DisplayData("Stock", DataGridView3, "PRODUCT")
+            Call DisplayData("Stock", DataGridView3, "QUANTITY")
         End If
     End Sub
 
     Private Sub stock_search_txt_LostFocus(sender As Object, e As EventArgs) Handles stock_search_txt.LostFocus
         If stock_search_txt.Text = "" Then
             stock_search_txt.Text = "Search..."
-            Call DisplayData("Stock", DataGridView3, "PRODUCT")
+            Call DisplayData("Stock", DataGridView3, "QUANTITY")
         End If
     End Sub
 
@@ -910,14 +955,14 @@ Public Class Form1
     Private Sub product_search_txt_GotFocus(sender As Object, e As EventArgs) Handles product_search_txt.GotFocus
         If product_search_txt.Text = "search" Then
             product_search_txt.Text = ""
-            Call DisplayData("Products", DataGridView1, "PRODUCT_NAME")
+            Call DisplayData("Products", DataGridView1, "EXPIRED_DATE")
         End If
     End Sub
 
     Private Sub product_search_txt_LostFocus(sender As Object, e As EventArgs) Handles product_search_txt.LostFocus
         If product_search_txt.Text = "" Then
             product_search_txt.Text = "search"
-            Call DisplayData("Products", DataGridView1, "PRODUCT_NAME")
+            Call DisplayData("Products", DataGridView1, "EXPIRED_DATE")
         End If
     End Sub
 
